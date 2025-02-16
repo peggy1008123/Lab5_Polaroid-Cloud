@@ -1,50 +1,133 @@
-body {
-    font-family: Helvetica, sans-serif;
-    color: #EAE8FF;
-    background: #2D3142;
-    padding: 0 40px;
-    text-align: center;
+:root{
+    --main-bg-color: #e9e9e9;
+    --primary-color: #424242;
 }
 
-nav {
-    margin: 40px auto 0 auto;
-    width: 250px;
-    border-radius: 50px;
-    background: #212431;
-}
-
-nav ul {
-    display: flex;
-    justify-content: space-evenly;
+body{
+    background-color: var(--main-bg-color);
+    color: var(--primary-color);
+    font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
 }
 
-nav ul li {
-    list-style-type: none;
+header{
+    padding: 20px;
+    margin-bottom: 100px;
+}
+
+header h1{
+    margin-top: 30px;
+    margin-left: 50px;
+    font-weight: normal;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+main{
+    background: url(../images/hero.png) no-repeat center 100px;
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.hero{
+    text-align: center;
+    min-height: 800px;
+}
+
+.hero h2{
+    font-size: 9em;
+    line-height: 1em;
+    text-transform: uppercase;
     margin: 0;
 }
 
-nav ul li a {
-    display: inline-block;
-    padding: 20px;
-    color: #EAE8FF;
-    text-decoration: none;
-    font-size: 1.2em;
+ul{
+    padding-bottom: 24px;
 }
 
-h1 {
-    font-size: 8em;
-    letter-spacing: -2px;
+.details ul li{
+    list-style-type: none;
+    margin: 10px 0;
+    padding: 0 0 0 70px;
+    font-size: 2em;
+    color: #424242;
+    line-height: 75px;
+    font-weight: 400;
 }
 
-h1 strong {
-    background: rgb(34,193,195);
-    background: linear-gradient(45deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.details ul li.qr{
+    background: url(../images/qr.svg) no-repeat center left;
 }
 
-img.about {
-    opacity: 0.5;
+.details ul li.wifi{
+    background: url(../images/wifi.svg) no-repeat center left;
+}
+
+.details ul li.pics{
+    background: url(../images/pics.svg) no-repeat center left;
+}
+
+.details ul li.cloud{
+    background: url(../images/cloud.svg) no-repeat center left;
+}
+
+h2{
+    font-size: 64px;
+    font-weight: 900;
+    text-align: center;
+}
+
+p{
+    font-size: 2em;
+    font-weight: 400;
+    line-height: 42px;
+    padding-bottom: 24px;
+    font-style: normal;
+    width: 1050px;
+}
+
+footer p{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 24px;
+}
+
+.subscribe-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 1000px;
+    height: 188px;
+    border-radius: 40px;
+    background: linear-gradient(180deg, #E2E2E2 0%, #D6D7D6 100%);
+    margin-bottom: 80px;
+}
+
+.subscribe-form button {
+    background-color: #ff3b30;
+    color: white;
+    border: none;
+    width: 254px;
+    height: 96px;  
+    padding: 12px 20px;
+    font-size: 24px;
+    font-weight: 900;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.subscribe-form button:hover{
+    background-color: #ff8983;
+}
+
+.subscribe-form input{
+    width: 600px;
+    height: 96px;
+    border: none;
+    font-size: 24px;
+    padding-left: 35px;
+    margin-right: 16px;
+    background: #ECECEC;
 }
